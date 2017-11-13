@@ -1,0 +1,41 @@
+html,
+body {
+	height: 100%;
+}
+
+html {
+	font-size: $font-size-html;
+}
+
+body {
+	font-family: $font-family-default;
+	font-size: $font-size-default;
+	line-height: $body-line-height;
+	font-weight: 300;
+	background-color: #fff;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.text-right {
+	text-align: right;
+}
+
+.container {
+	margin: 0 auto;
+	max-width: $container-width;
+	padding: $container-padding;
+	&-big {
+		max-width: $container-big-width;
+	}
+}
+
+.clearfix {
+	@include clearfix;
+}

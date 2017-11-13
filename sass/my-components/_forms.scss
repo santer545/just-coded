@@ -1,0 +1,48 @@
+.form {
+    &-control {
+        font-size: 1rem;
+        height: 37px;
+        line-height: 37px;
+        padding: 0 12px;
+        width: 100%;
+        font-weight: 500;
+        border: 1px solid #6e7279;
+        color: #6e7279;
+        background-color: transparent;
+        &::-webkit-input-placeholder {
+            color: #6e7279;
+        }
+        &:-ms-input-placeholder {
+            color: #6e7279;
+        }
+        &:hover,
+        &:focus {
+        	outline: none;
+        }
+    }
+    &-group {
+        margin-bottom: 12px;
+    }
+}
+
+// validate 
+
+.error-text {
+	display: none;
+}
+
+.has-error {
+	.error-text {
+		display: block;
+	}
+	input {
+		border: 1px solid #f51822;
+		color: #f51822;
+		&::-webkit-input-placeholder {
+            color: #f51822;
+        }
+        &:-ms-input-placeholder {
+            color: #f51822;
+        }
+	}
+}

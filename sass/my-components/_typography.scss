@@ -1,0 +1,76 @@
+.top-heading,
+h1 {
+	position: relative;
+	padding: 6% 0 12%;
+	font-size: 2.85rem;
+	font-family: $font-family-raleway;
+	font-weight: 700;
+	color: #fff;
+	background-image: url('../images/main-heading-bg.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	z-index: 1;
+	text-transform: uppercase;
+	@include tablet {
+		padding: 4% 0 6%;
+		font-size: 2rem;
+	}
+	&:before {
+		content: '';
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background-color: rgba(43, 46, 53, 0.96);
+		z-index: -1;
+	}
+}
+
+
+.heading-h2,
+h2 {
+	position: relative;
+	font-family: $font-family-raleway;
+	font-weight: 600;
+	font-size: 1.71rem;
+	color: #24282f;
+	padding-bottom: 29px;
+	margin-bottom: 33px;
+	text-transform: uppercase;
+
+	&:after {
+		content: '';
+		position: absolute;
+		bottom: 0;
+		width: 77px;
+		left: 50%;
+		transform: translate(-50%, 0);
+		height: 2px;
+		background-color: #b5a263;
+	}
+
+	&--inverse {
+		&:after {
+			background-color: #24282f;
+		}
+	}
+}
+
+.heading-footer {
+	font-size: 1rem;
+	color: #b5a263;
+	font-weight: 600;
+	margin-bottom: 10px;
+	text-transform: uppercase;
+}
+
+.heading-h3,
+h3 {
+	font-family: $font-family-raleway;
+	font-weight: 600;
+	font-size: 1.41rem;
+	color: #24282f;
+	margin-bottom: 20px;
+	text-transform: uppercase;
+}
