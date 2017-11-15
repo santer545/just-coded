@@ -1,7 +1,7 @@
 /* thumbnails */
 
 .thumbnail {
-	padding: 10% 0px 30px;
+	padding: 10.8% 0px 30px;
 	@include tablet {
 		padding: 5% 0 30px;
 	}
@@ -14,10 +14,10 @@
 			width: 100%;
 		}
 		figure {
-			height: 300px;
 			margin: 0;
-			background-repeat: no-repeat;
-			background-size: cover;
+			img {
+				width: 100%;
+			}
 		}
 	}
 

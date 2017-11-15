@@ -1,12 +1,13 @@
 /* header */
 
 .header {
-    height: 100px;
-    background-color: #24282f;
+    height: $header-height;
+    background-color: $header-bg;
 }
 
 .logo {
-    padding-top: 40px;
+    padding-top: $logo-padding-top;
+    padding-left: $logo-padding-left;
     float: left;
 }
 
@@ -23,9 +24,9 @@
             left: 0;
             right: 0;
             top: 0;
-            padding-top: 50px;
-            height: 100vh;
-            background-color: #fff;
+            padding-top: $navbar-padding-top-mobile;
+            height: $navbar-height-mobile;
+            background-color: $white;
             transform: translate(100%, 0);
             transition: transform 0.3s;
             z-index: 3;
@@ -40,12 +41,12 @@
         li {
             float: left;
             &:not(:last-child) {
-                margin-right: 38px;
+                margin-right: $nav-item-margin-right;
                 @include tablet {
-                    margin-right: 15px;
+                    margin-right: $nav-item-tablet-margin-right;
                 }
                 @include mobile {
-                    margin-right: 0;
+                    margin-right: $nav-item-mobile-margin-right;
                 }
             }
             @include mobile {
@@ -60,23 +61,23 @@
                 display: block;
                 padding: $navbar-padding;
                 font-weight: 500;
-                font-size: 1rem;
+                font-size: $nav-link-size;
                 text-transform: uppercase;
-                color: #fff;
+                color: $white;
                 text-decoration: none;
                 @include mobile {
-                	color: #24282f;
+                	color: $nav-link-mobile-color;
                 	padding: $navbar-padding-xs;
-                	border-bottom: 1px solid #24282f;
+                	border-bottom: $nav-link-mobile-border;
                 }
                 &:after {
                     content: '';
                     position: absolute;
                     left: 0;
                     right: 0;
-                    bottom: 0;
+                    bottom: 1px;
                     height: 2px;
-                    background-color: #b5a263;
+                    background-color: $nav-link-after-bg;
                     transform: scaleX(0);
                     transition: transform 0.3s;
                     @include mobile {

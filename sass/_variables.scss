@@ -13,6 +13,7 @@ $laptop-width: 1199px;
 
 $body-bg: #fff;
 $body-color: #000;
+$white: #fff;
 
 
 
@@ -33,14 +34,64 @@ $container-big-width: 1392px;
 $container-padding: 0 15px;
 
 
+// header
+
+$header-height: 103px;
+$header-bg: #24282f;
+
+$logo-padding-top: 40px;
+$logo-padding-left: 10px;
+
+
+
 // nvabar
 
-$navbar-padding: 40px 12px;
+$navbar-padding: 43px 12px 42px;
 
 $navbar-padding-xs: 20px 0;
+
+$navbar-height-mobile: 100vh;
+$navbar-padding-top-mobile: 50px;
+
+$nav-item-margin-right: 23px;
+$nav-item-tablet-margin-right: 15px;
+$nav-item-mobile-margin-right: 0;
+
+
+$nav-link-size: 1rem;
+$nav-link-mobile-color: #24282f;
+$nav-link-mobile-border: 1px solid #24282f;
+$nav-link-after-bg: #b5a263;
 
 
 // buttons
 
 $btn-default-bg: #fff;
 $btn-subscribe-bg: #b5a263;
+
+
+// headings
+
+$h1-padding: 5.7% 0 11.5%;
+$h1-font-size: 2.85rem;
+
+$h1-padding-tablet: 4% 0 6%;
+$h1-font-size-tablet: 2rem;
+
+
+$h2-font-size: 1.71rem;
+$h2-color: #24282f;
+$h2-padding-bottom: 24px;
+$h2-margin-bottom: 33px;
+$h2-after-bg: #b5a263;
+$h2-after-bg-inverse: #24282f;
+
+
+$heading-footer-font-size: 1rem;
+$heading-footer-color: #b5a263;
+$heading-footer-margin-bottom: 10px;
+
+
+$h3-font-size: 1.41rem;
+$h3-color: #24282f;
+$h3-margin-bottom: 20px;

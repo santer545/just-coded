@@ -1,19 +1,19 @@
 .top-heading,
 h1 {
 	position: relative;
-	padding: 6% 0 12%;
-	font-size: 2.85rem;
+	padding: $h1-padding;
+	font-size: $h1-font-size;
 	font-family: $font-family-raleway;
 	font-weight: 700;
-	color: #fff;
+	color: $white;
 	background-image: url('../images/main-heading-bg.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	z-index: 1;
 	text-transform: uppercase;
 	@include tablet {
-		padding: 4% 0 6%;
-		font-size: 2rem;
+		padding: $h1-padding-tablet;
+		font-size: $h1-font-size-tablet;
 	}
 	&:before {
 		content: '';
@@ -33,10 +33,10 @@ h2 {
 	position: relative;
 	font-family: $font-family-raleway;
 	font-weight: 600;
-	font-size: 1.71rem;
-	color: #24282f;
-	padding-bottom: 29px;
-	margin-bottom: 33px;
+	font-size: $h2-font-size;
+	color: $h2-color;
+	padding-bottom: $h2-padding-bottom;
+	margin-bottom: $h2-margin-bottom;
 	text-transform: uppercase;
 
 	&:after {
@@ -47,21 +47,21 @@ h2 {
 		left: 50%;
 		transform: translate(-50%, 0);
 		height: 2px;
-		background-color: #b5a263;
+		background-color: $h2-after-bg
 	}
 
 	&--inverse {
 		&:after {
-			background-color: #24282f;
+			background-color: $h2-after-bg-inverse;
 		}
 	}
 }
 
 .heading-footer {
-	font-size: 1rem;
-	color: #b5a263;
+	font-size: $heading-footer-font-size;
+	color: $heading-footer-color;
 	font-weight: 600;
-	margin-bottom: 10px;
+	margin-bottom: $heading-footer-margin-bottom;
 	text-transform: uppercase;
 }
 
@@ -69,8 +69,8 @@ h2 {
 h3 {
 	font-family: $font-family-raleway;
 	font-weight: 600;
-	font-size: 1.41rem;
-	color: #24282f;
-	margin-bottom: 20px;
+	font-size: $h3-font-size;
+	color: $h3-color;
+	margin-bottom: $h3-margin-bottom;
 	text-transform: uppercase;
 }

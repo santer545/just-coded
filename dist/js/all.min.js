@@ -4774,7 +4774,10 @@ function validate(form){
      slider();
 
      // toggle navbar
-     toogleNav ();
+     toogleNav();
+
+     // retina
+     retinaImages();
 
  });
 
@@ -4789,11 +4792,22 @@ function validate(form){
      });
  }
 
- function toogleNav () {
+ function toogleNav() {
 
-    $('#nav-icon').click(function(){
-        $(this).toggleClass('open');
-        $(this).closest('.navbar').find('ul').toggleClass('active');
-    });
+     $('#nav-icon').click(function() {
+         $(this).toggleClass('open');
+         $(this).closest('.navbar').find('ul').toggleClass('active');
+     });
 
+ }
+
+ function retinaImages() {
+     if (window.devicePixelRatio > 1) {
+         var lowresImages = $('img.js-retina');
+         images.each(function(i) {
+             var lowres = $(this).attr('src');
+             var highres = lowres.replace(".", "@2x.");
+             $(this).attr('src', highres);
+         });
+     }
  }
