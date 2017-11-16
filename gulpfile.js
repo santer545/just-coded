@@ -58,7 +58,7 @@ var destDir = rootDir + '/dist/js';        // здесь хранится все
 gulp.task('scripts', function() {
     return gulp.src([
             sourceDir + '/jquery-2.2.1.min.js',
-            sourceDir + '/swiper.jquery.js',
+            sourceDir + '/swiper.min.js',
             sourceDir + '/validate.js',
             sourceDir + '/main.js'
         ])

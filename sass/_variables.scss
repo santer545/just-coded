@@ -14,6 +14,7 @@ $laptop-width: 1199px;
 $body-bg: #fff;
 $body-color: #000;
 $white: #fff;
+$dark: #000;
 
 
 
@@ -36,17 +37,17 @@ $container-padding: 0 15px;
 
 // header
 
-$header-height: 103px;
+$header-height: 100px;
 $header-bg: #24282f;
 
-$logo-padding-top: 40px;
+$logo-padding-top: 39px;
 $logo-padding-left: 10px;
 
 
 
 // nvabar
 
-$navbar-padding: 43px 12px 42px;
+$navbar-padding: 39px 16px 42px;
 
 $navbar-padding-xs: 20px 0;
 
@@ -64,15 +65,46 @@ $nav-link-mobile-border: 1px solid #24282f;
 $nav-link-after-bg: #b5a263;
 
 
+$nav-icon-width: 50px;
+$nav-icon-height: 36px;
+$nav-icon-margin-top: 34px;
+$nav-icon-span-height: 4px;
+$nav-icon-span-width: 100%;
+$nav-icon-span-radius: 9px;
+
+$nav-icon-span-open-width: 28px;
+$nav-icon-span-open-mt: 10px;
+
+
 // buttons
 
+$btn-padding: 13px 42px;
+$btn-mb: 0;
+$btn-fz: 1.14rem;
+$btn-lh: 1.42857143;
+$btn-border: 1px solid transparent;
+$btn-radius: 40px;
+
+$btn--tablet-padding: 9px 30px;
+$btn--tablet-fz: 0.9rem;
+
+
 $btn-default-bg: #fff;
+$btn-default-color: #24282f;
+$btn-default-border: 1px solid #24282f;
+
+
 $btn-subscribe-bg: #b5a263;
+$btn-subscribe-height: 37px;
+$btn-subscribe-padding: 0 12px;
+$btn-subscribe-lh: 37px;
+$btn-subscribe-width: 100%;
+$btn-subscribe-radius: 0;
 
 
 // headings
 
-$h1-padding: 5.7% 0 11.5%;
+$h1-padding: 4% 0 8%;
 $h1-font-size: 2.85rem;
 
 $h1-padding-tablet: 4% 0 6%;
@@ -89,9 +121,162 @@ $h2-after-bg-inverse: #24282f;
 
 $heading-footer-font-size: 1rem;
 $heading-footer-color: #b5a263;
-$heading-footer-margin-bottom: 10px;
+$heading-footer-margin-bottom: 19px;
 
 
 $h3-font-size: 1.41rem;
 $h3-color: #24282f;
 $h3-margin-bottom: 20px;
+
+
+// forms
+
+$input-fz: 1rem;
+$input-height: 39px;
+$input-lh: 37px;
+$input-padding: 0 12px;
+$input-width: 100%;
+$input-border: 1px solid #6e7279;
+$input-color: #6e7279;
+$input-bg: transparent;
+$input-placeholder: #6e7279;
+
+$form-group-mb: 12px;
+
+$input-error-border: 1px solid #f51822;
+$input-error-color: #f51822;
+$input-error-placeholder: #f51822;
+
+
+// global elements
+
+$thumbnail-padding: 7.8% 0px 30px;
+$thumbnail--tablet-padding: 5% 0 30px;
+
+$thumbnail-item-width: 33.333%;
+$thumbnail-item-padding: 0 15px;
+
+$thumbnail-item--mobile-width: 100%;
+
+$thumbnail-wrapper-margin: 0 -15px;
+
+$thumbnail-social-pt: 32px;
+$thumbnail-social-pr: 47px;
+$thumbnail-social--laptop-pr: 25px;
+$thumbnail-social--tablet-pt: 10px;
+$thumbnail-social--tablet-pr: 0;
+
+$th-social-item-mr: 7px;
+
+$th-social-link-width: 34px;
+$th-social-link-height: $th-social-link-width;
+$th-social-link-fz: 1.14rem;
+$th-social-link-lh: 34px;
+$th-social-link-bg: #dedede;
+$th-social-link-hover-bg: #b5a263;
+
+$th-info-pb: 37px;
+
+$th-name-pt: 21px;
+$th-name-pl: 23px;
+$th-name-fz: 1.14rem;
+$th-name-color: #232323;
+
+$th-name--laptop-pl: 10px;
+$th-name--tablet-pl: 0;
+
+$th-name-span-fz: 1rem;
+$th-name-span-color: #b5a263;
+
+
+$slider-pt: 6%;
+$slider-pb: 5.9%;
+$slider-bg: #f7f7f7;
+
+
+
+$review-item-padding: 30px 15% 0;
+$review-item-figure-margin: 0 0 28px;
+
+$review-text-fz: 1.14rem;
+$review-text-mb: 36px;
+
+$review-name-fz: 1.14rem;
+$review-name-lh: 2rem;
+$review-name-color: #b5a263;
+
+$review-name-span-fz: 1rem;
+
+
+
+
+
+// footer 
+
+$footer-color: #6e7279;
+
+
+$footer-top-pt: 3.9%;
+$footer-top-pb: 2%;
+$footer-top-bg: #2b2f35;
+$footer-top-mobile-padding: 20px 0;
+
+
+$footer-about-width: 40%;
+$footer-about-lh: 24px;
+$footer-about-pr: 15%;
+$footer-about-pl: 12px;
+$footer-about--tablet-pl: 0;
+
+$footer-about--mobile-width: 100%;
+$footer-about--mobile-pr: 0;
+$footer-about--mobile-mb: 20px;
+
+
+$footer-address-width: 30%;
+$footer-address-pr: 10%;
+$footer-address-pl: 18px;
+$footer-address-lh: 21px;
+
+$footer-address--tablet-pl: 0;
+
+$footer-address--mobile-pr: 0;
+$footer-address--mobile-mb: 20px;
+$footer-address--mobile-width: 100%;
+
+
+$footer-subscribe-pr: 1%;
+$footer-subscribe-pl: 34px;
+
+$footer-subscribe--tablet-pl: 0;
+
+$footer-subscribe--mobile-pr: 0;
+$footer-subscribe--mobile-mb: 0;
+
+$footer-bottom-bg: #24282f;
+
+$copyright-pl: 11px;
+$copyright-pb: 27px;
+$copyright-pt: 25px;
+
+$copyright--mobile-padding: 10px 0;
+
+
+// social
+
+$social-pt: 19px;
+$social-pr: 12px;
+
+$social-mobile-padding: 0 0 10px;
+
+$social-item-ml: 11px;
+
+$social-link-fz: 1.14rem;
+$social-link-width: 34px;
+$social-link-height: $social-link-width;
+$social-link-color: #6e7279;
+$social-link-border: 1px solid #6e7279;
+$social-link-lh: 34px;
+
+$social-link-hover-bg: #b5a263;
+$social-link-hover-border: 1px solid #b5a263

@@ -1,10 +1,9 @@
 .btn {
     display: inline-block;
-    padding: 15px 40px;
-    margin-bottom: 0;
-    font-size: 1.14rem;
+    padding: $btn-padding;
+    font-size: $btn-fz;
     font-weight: 400;
-    line-height: 1.42857143;
+    line-height: $btn-lh;
     text-align: center;
     white-space: nowrap;
     vertical-align: middle;
@@ -16,8 +15,8 @@
     -ms-user-select: none;
     user-select: none;
     background-image: none;
-    border: 1px solid transparent;
-    border-radius: 40px;
+    border: $btn-border;
+    border-radius: $btn-radius;
     text-transform: uppercase;
     text-decoration: none;
     transition: background-color 0.3s;
@@ -28,13 +27,13 @@
     }
     
     @include tablet {
-        padding: 9px 30px;
-        font-size: 0.9rem;
+        padding: $btn--tablet-padding;
+        font-size: $btn--tablet-fz;
     }
 
     &-default {
-        color: #24282f;
-        border: 1px solid #24282f;
+        color: $btn-default-color;
+        border: $btn-default-border;
         background-color: $btn-default-bg;
         &:hover,
         &:focus {
@@ -43,13 +42,13 @@
     }
 
     &-subscribe {
-        height: 37px;
-        padding: 0 12px;
-        line-height: 37px;
+        height: $btn-subscribe-height;
+        padding: $btn-subscribe-padding;
+        line-height: $btn-subscribe-lh;
         background-color: $btn-subscribe-bg;
-        color: #fff;
-        border-radius: 0;
-        width: 100%;
+        color: $white;
+        border-radius: $btn-subscribe-radius;
+        width: $btn-subscribe-width;
         &:hover,
         &:focus {
             background-color: darken($btn-subscribe-bg, 15%);

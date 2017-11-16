@@ -1,19 +1,19 @@
 .form {
     &-control {
-        font-size: 1rem;
-        height: 37px;
-        line-height: 37px;
-        padding: 0 12px;
-        width: 100%;
+        font-size: $input-fz;
+        height: $input-height;
+        line-height: $input-lh;
+        padding: $input-padding;
+        width: $input-width;
         font-weight: 500;
-        border: 1px solid #6e7279;
-        color: #6e7279;
-        background-color: transparent;
+        border: $input-border;
+        color: $input-color;
+        background-color: $input-bg;
         &::-webkit-input-placeholder {
-            color: #6e7279;
+            color: $input-placeholder;
         }
         &:-ms-input-placeholder {
-            color: #6e7279;
+            color: $input-placeholder;
         }
         &:hover,
         &:focus {
@@ -21,7 +21,7 @@
         }
     }
     &-group {
-        margin-bottom: 12px;
+        margin-bottom: $form-group-mb;
     }
 }
 
@@ -36,13 +36,13 @@
 		display: block;
 	}
 	input {
-		border: 1px solid #f51822;
-		color: #f51822;
+		border: $input-error-border;
+		color: $input-error-color;
 		&::-webkit-input-placeholder {
-            color: #f51822;
+            color: $input-error-placeholder;
         }
         &:-ms-input-placeholder {
-            color: #f51822;
+            color: $input-error-placeholder;
         }
 	}
 }

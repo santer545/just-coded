@@ -1,28 +1,26 @@
 /* thumbnails */
 
 .thumbnail {
-	padding: 10.8% 0px 30px;
+	padding: $thumbnail-padding;
 	@include tablet {
-		padding: 5% 0 30px;
+		padding: $thumbnail--tablet-padding
 	}
 	&-item {
 		float: left;
-		width: 33.3333%;
-		padding: 0 15px;
+		width: $thumbnail-item-width;
+		padding: $thumbnail-item-padding;
 		@include mobile {
 			float: none;
-			width: 100%;
+			width: $thumbnail-item--mobile-width;
 		}
 		figure {
+			text-align: center;
 			margin: 0;
-			img {
-				width: 100%;
-			}
 		}
 	}
 
 	&-wrapper {
-		margin: 0 -15px;
+		margin: $thumbnail-wrapper-margin;
 	}
 
 	&-social {
@@ -30,28 +28,33 @@
 		padding: 0;
 		margin: 0;
 		padding-top: 32px;
+		padding-right: 47px;
 		float: right;
 		font-size: 0;
+		@include laptop {
+			padding-right: $thumbnail-social--laptop-pr;
+		}
 		@include tablet {
 			float: none;
 			text-align: center;
-			padding-top: 10px;
+			padding-top: $thumbnail-social--tablet-pt;
+			padding-right: $thumbnail-social--tablet-pr;
 		}
 		li {
 			display: inline-block;
 			vertical-align: middle;
 			&:not(:last-child) {
-				margin-right: 7px;
+				margin-right: $th-social-item-mr;
 			}
 			
 			a {
 				display: block;
-				width: 34px;
-				height: 34px;
-				font-size: 1.14rem;
-				line-height: 34px;
-				color: #fff;
-				background-color: #dedede;
+				width: $th-social-link-width;
+				height: $th-social-link-height;
+				font-size: $th-social-link-fz;
+				line-height: $th-social-link-lh;
+				color: $white;
+				background-color: $th-social-link-bg;
 				text-decoration: none;
 				text-align: center;
 				border-radius: 50%;
@@ -59,7 +62,7 @@
 			}
 			&:hover {
 				a {
-					background-color: #b5a263;
+					background-color: $th-social-link-hover-bg;
 				}
 			}
 		}
@@ -68,27 +71,31 @@
 
 	&-info {
 		@include clearfix;
-		padding-bottom: 43px;
+		padding-bottom: $th-info-pb;
 	}
 	&-name {
-		padding-top: 30px;
-		padding-left: 10px;
+		padding-top: $th-name-pt;
+		padding-left: $th-name-pl;
 		float: left;
 		font-family: $font-family-raleway;
-		font-size: 1.14rem;
+		font-size: $th-name-fz;
 		font-weight: 500;
-		color: #232323;
+		color: $th-name-color;
 		text-transform: uppercase;
+		@include laptop {
+			padding-left: $th-name--laptop-pl;
+		}
 		@include tablet {
 			float: none;
 			text-align: center;
+			padding-left: $th-name--tablet-pl;
 		}
 		span {
 			display: block;
 			font-family: $font-family-default;
-			font-size: 1rem;
+			font-size: $th-name-span-fz;
 			font-weight: 500;
-			color: #b5a263;
+			color: $th-name-span-color;
 			text-transform: none;
 		}
 	}
@@ -96,30 +103,34 @@
 
 
 .slider {
-	padding-top: 6%;
-	padding-bottom: 6%;
-	background-color: #f7f7f7;
+	padding-top: $slider-pt;
+	padding-bottom: $slider-pb;
+	background-color: $slider-bg;
 }
 
 .review {
 	&-item {
 		text-align: center;
-		padding: 0 15%;
+		padding: $review-item-padding;
+		figure {
+			margin: $review-item-figure-margin;
+		}
 	}
 	&-text {
-		margin-bottom: 30px;
+		font-size: $review-text-fz;
+		margin-bottom: $review-text-mb;
 	}
 	&-name {
 		font-weight: 600;
-		font-size: 1.14rem;
-		line-height: 1.7rem;
-		color: #b5a263;
+		font-size: $review-name-fz;
+		line-height: $review-name-lh;
+		color: $review-name-color;
 		text-transform: uppercase;
 		span {
 			display: block;
-			font-size: 1rem;
+			font-size: $review-name-span-fz;
 			text-transform: none;
-			color: #000;
+			color: $dark;
 		}
 	}
 }

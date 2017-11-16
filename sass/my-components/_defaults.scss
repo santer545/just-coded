@@ -12,7 +12,12 @@ body {
 	font-size: $font-size-default;
 	line-height: $body-line-height;
 	font-weight: 300;
-	background-color: #fff;
+	background-color: $white;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
 }
 
 * {
